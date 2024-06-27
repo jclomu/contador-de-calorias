@@ -1,8 +1,7 @@
 import { Activity } from '../types'; // Importa el tipo Activity desde el archivo types.ts ubicado en el directorio superior
 
-export type ActivityActions = {
-   
-}
+export type ActivityActions =
+    { type: 'save-activity', payload: { newActivity : Activity } }
 
 type ActivityState = {
     activities: Activity[]; // Define el estado del reducer, que incluye un arreglo de actividades
@@ -15,6 +14,13 @@ export const initialState: ActivityState = {
 export const activityReducer = (
     state: ActivityState = initialState,
     action: ActivityActions
-) => {
-    
+    ) => {
+        if(action.type === 'save-activity') {
+            return {
+                ...state,
+                activities: [...state.activities, action.payload.newActivity]
+            }
+        }
+
+        return state
 }
