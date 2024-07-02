@@ -112,8 +112,26 @@ Este proyecto contiene varios conceptos y abarca habilidades importantes:
 ## Historial de Versiones
 Registro de las versiones del proyecto, las funcionalidades agregadas y el conocimiento adquirido en cada versión.
 
+### Versión 1.1.0
+**Fecha: 2024-07-02**
+-Se la función de para editar los registros y se contenctó con el botón de editar.
+-Se agregaron los botones eliminar registro y resetear appy con sus respectivas acciones.
+-Se agregó el componente 'CaloriesTracker' para mostrar subtotales por categoría y el balance.
+-Se Agregó el componente 'CaloriesDisplay' para facilitar el mantenimiento del Resumen de Calorías.
+-Se agregó almacenamiento en localstorage
+
+**Fecha: 2024-06-28**
+-Se instalo la librería @heroicos para agregar a la UI el boton que ejecutará la acción de editar.
+
+### Versión 1.1.0
+**Fecha: 2024-06-27**
+
+- Se configuró el "reducer" para "activities". Ahora al enviar el formulario, este pasa los datos de forma exitosa para ser mostrados, también se reinicia el formulario despues de enviar.
+
+-Se agrego el componente "ActivityList" para mostrar los registros ingresados en forma de tarjetas. 
+
 ### Versión 1.0.0
-Fecha: 2024-06-26
+**Fecha: 2024-06-26**
 
   **Inicialización del proyecto con Vite y configuración de TailwindCSS.**
     -Descripción: Configurar como entorno de desarrollo con 
